@@ -138,6 +138,188 @@ public class C07Array {
 	// 		.mapToInt(a -> a)// Integer를 int로 형변환
 	// 		.toArray(); // 배열로 전환
 
-	}
+	//	프로그래머스) K번째 수
+	// 	int[] array = new int[] {1, 5, 2, 6, 3, 7, 4};
+	// 	int[][] commands = new int[][] {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+	//
+	// 	int len = commands.length;
+	// 	int[] answer = new int[len];
+	// 	int[] tmp;
+	//
+	// 	for (int i = 0; i < len; i++) {
+	// 		int start = commands[i][0] - 1;
+	// 		int end = commands[i][1];
+	// 		tmp = new int[end-start];
+	//
+	// 		int idx = 0;
+	// 		for (int j = start; j < end; j++) {
+	// 			tmp[idx] = array[j];
+	// 			idx++;
+	// 		}
+	// 		Arrays.sort(tmp);
+	// 		answer[i] = tmp[commands[i][2]-1];
+	// 	}
 
+	//	선택정렬 알고리즘
+	// 	int[] arr = {17, 20, 19, 25, 12};
+	//
+	// 	for (int i = 0; i < arr.length - 1; i++) {
+	// 		int minValue = arr[i];
+	// 		int idx = i;
+	// 		for (int j = i + 1; j < arr.length; j++) {
+	// 			if (minValue > arr[j]) {
+	// 				minValue = arr[j];
+	// 				idx = j;
+	// 			}
+	// 		}
+	// 		int tmp = arr[i];
+	// 		arr[i] = arr[idx];
+	// 		arr[idx] = tmp;
+	// 		System.out.println(Arrays.toString(arr));
+	// 	}
+
+	//	숫자 조합의 합 : 모두 각기 다른 숫자의 배열이 있을 때,
+	//	만들어질 수 있는 2개의 조합의 합을 출력하라
+	// 	int[] intArr = {10, 20, 30, 40, 50, 60};
+	// 	for (int i = 0; i < intArr.length - 1; i++) {
+	// 		for (int j = i + 1; j < intArr.length; j++) {
+	// 			System.out.println(intArr[i] + " + " + intArr[j] + " =  " + (intArr[i]+intArr[j]));
+	// 		}
+	// 	}
+
+	// 	배열의 복사
+	// 	copyOf(배열, length), copyOfRange(배열, start, end)
+	// 	int[] arr = new int[] {10, 20, 30, 40, 50};
+	// 	int[] newArr1 = Arrays.copyOf(arr, 3);
+	// 	System.out.println(Arrays.toString(newArr1));
+	// 	int[] newArr2 = Arrays.copyOfRange(arr, 1, 4);
+	// 	System.out.println(Arrays.toString(newArr2));
+
+	// // 배열의 중복제거
+	// 	int[] tmp = {10, 10, 5, 7, 40, 40, 10, 10};
+	// //	5,7,10,10,10,10,40,40
+	// //	list,set도 쓰지 말고 중복제거
+	// //	hint: 옆의 숫자와 같은지 안같은지 비교
+	// //	새로운 배열의 길이는 넉넉하게 tmp의 길이만큼배정후 추후 copyOfRange
+	//
+	// 	int[] newTmp = new int[tmp.length];
+	// 	Arrays.sort(tmp);
+	//
+	// 	newTmp[0] = tmp[0];
+	//
+	// 	int idx = 0;
+	// 	for (int i = 0; i < tmp.length; i++) {
+	// 		if (i==0 || tmp[i] != tmp[i - 1]) {
+	// 			newTmp[idx] = tmp[i];
+	// 			idx++;
+	// 		}
+	// 		int[] answer = Arrays.copyOfRange(newTmp, 0, idx);
+	// 		System.out.println(Arrays.toString(answer));
+	// 	}
+
+	// //	프로그래머스) 두 개 뽑아서 더하기
+	// 	int[] numbers = {5,0,2,7};
+	// 	int[] tmp = new int[numbers.length * numbers.length];
+	//
+	// 	int idx = 0;
+	// 	for (int i = 0; i < numbers.length - 1; i++) {
+	// 		for (int j = i + 1; j < numbers.length; j++) {
+	// 			tmp[idx] = numbers[i] + numbers[j];
+	// 			idx++;
+	// 		}
+	// 	}
+	// 	tmp = Arrays.copyOf(tmp, idx);
+	// 	Arrays.sort(tmp);
+	//
+	// 	idx = 0;
+	// 	int[] answer = new int[tmp.length];
+	// 	for (int i = 0; i < tmp.length; i++) {
+	// 		if (i == 0 || tmp[i] != tmp[i - 1]) {
+	// 			answer[idx] = tmp[i];
+	// 			idx++;
+	// 		}
+	// 	}
+	// 	answer = Arrays.copyOf(answer, idx);
+
+	// 배열의 검색
+	// 	int[] arr = {5, 3, 1, 8, 7};
+	// 	for (int i = 0; i < arr.length; i++) {
+	// 		if(arr[i] == 8)
+	// 			System.out.println(i);
+	// 	}
+
+	//	이진 검색(Binary Search) - 이분탐색
+	//	복잡도 O(logn)
+	// 	int[] arr = {5, 3, 1, 8, 7, 5, 3, 1, 8, 7, 5, 3, 1, 8, 7};
+	//
+	// 	int[] arr = {1, 3, 6, 8, 9, 11 ,15};
+	// //	사전에 오름차순 정렬이 되어 있어야 이진검색 가능
+	// 	System.out.println(Arrays.binarySearch(arr, 15));
+
+	// //	배열간 비교
+	// 	int[] arr1 = {10, 20, 30};
+	// 	int[] arr2 = {10, 20, 30};
+	// 	System.out.println(arr1 == arr2);
+	// //	Arrays.equals : 값과 순서까지 동일해야 true
+	// 	System.out.println(Arrays.equals(arr1, arr2));
+
+	// //	2차원 배열 선언과 할당
+	// 	int[][] arr = new int[2][3];
+	// 	arr[0][0] = 1;
+	// 	arr[0][1] = 2;
+	// 	arr[0][2] = 3;
+	// 	arr[1][0] = 4;
+	// 	arr[1][1] = 5;
+	// 	arr[1][2] = 6;
+	//
+	// //	리터럴 방식으로 할당
+	// 	int[][] arr2 = {{1, 2, 3}, {4, 5, 6}};
+	//
+	// //	2차원배열의 출력
+	// 	System.out.println(Arrays.deepToString(arr2));
+	//	2차원 가변배열 선언 후 할당
+	// 	int[][] arr = new int[2][];
+	// 	arr[0] = new int[3];
+	// 	arr[1] = new int[4];
+
+	//	가변배열 리터럴 방식
+
+	// int[][] arr2 = {{10, 20}, {10, 20, 30}};
+	//	[3][4]사이즈 배열을 선언한 뒤
+	//	1~12까지 숫자값 각 배열에 할당 후 출력
+	//	{1,2,3,4}, {5,6,7,8}, {9,10,11,12}
+	//
+	// 	int[][] arr = new int[3][4];
+	// 	int num = 1;
+	// 	for (int i = 0; i < arr.length; i++) {
+	// 		for (int j = 0; j < arr[i].length; j++) {
+	// 			arr[i][j] = num;
+	// 			num++;
+	// 		}
+	// 	}
+	// 	System.out.println(Arrays.deepToString(arr));
+
+		// int[][] arr1 = {{1, 2}, {2, 3}};
+		// int[][] arr2 = {{3, 4}, {5, 6}};
+		// int[][] answer = new int[arr1.length][arr1[0].length];
+		// for (int i = 0; i < arr1.length; i++) {
+		// 	for (int j = 0; j < arr1[i].length; j++) {
+		// 		answer[i][j] = arr1[i][j] + arr2[i][j];
+		// 	}
+		// }
+		// 프로그래머스) 행렬의 덧셈
+
+	//	가변 배열 실습 : 행의 길이(전체 배열의 길이)5 => {{x}, {x,x}, {x,x,x}...}
+	// 	int[][] test = new int[5][];
+	// 	for (int i = 0; i < test.length; i++) {
+	// 		test[i] = new int[i + 1];
+	// 		for (int j = 0; j < test[i].length; j++) {
+	// 			test[i][j] = (i+1)*10;
+	// 		}
+	// 	}
+	// 	System.out.println(Arrays.deepToString(test));
+
+
+
+	}
 }
