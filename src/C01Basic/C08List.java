@@ -147,27 +147,26 @@ public class C08List {
 		// 프로그래머스) n의 배수 고르기
 		// 프로그래머스) 두 개 뽑아서 더하기
 
-	//	배열과 List간의 변환
-	//	1. String배열을 List<String>으로 변환
-		String[] stArr = {"java", "python", "C++"};
-	//	1-1) Arrays.asList
-		List<String> stList1 = new ArrayList<>(Arrays.asList(stArr));
-	//	1-2) for문을 통해 담기
-	//	1-3) streamApi(참고만)
-	//	1-3) streamApi(참고만)
-		List<String> stList2 = Arrays.stream(stArr).collect(Collectors.toList());
-
-	//	2. List<String>을 String배열로 변환
-	//	2-1) for문을 통해 담기
-	//	2-2) toArray
-		String[] stArr2 = stList1.toArray(new String[stList1.size()]);
-
-	//	3. int배열을 List<Integer>로 변환
-	//	3-1) for문을 통해 담기
-	//	3-2) streamAPI 사용
-
-		int[] intArr = {10, 20, 30, 40};
-		List<Integer> intList = Arrays.stream(intArr).boxed().collect(Collectors.toList());
+	// //	배열과 List간의 변환
+	// //	1. String배열을 List<String>으로 변환
+	// 	String[] stArr = {"java", "python", "C++"};
+	// //	1-1) Arrays.asList
+	// 	List<String> stList1 = new ArrayList<>(Arrays.asList(stArr));
+	// //	1-2) for문을 통해 담기
+	// //	1-3) streamApi(참고만)
+	// 	List<String> stList2 = Arrays.stream(stArr).collect(Collectors.toList());
+	//
+	// //	2. List<String>을 String배열로 변환
+	// //	2-1) for문을 통해 담기
+	// //	2-2) toArray
+	// 	String[] stArr2 = stList1.toArray(new String[stList1.size()]);
+	//
+	// //	3. int배열을 List<Integer>로 변환
+	// //	3-1) for문을 통해 담기
+	// //	3-2) streamAPI 사용
+	//
+	// 	int[] intArr = {10, 20, 30, 40};
+	// 	List<Integer> intList = Arrays.stream(intArr).boxed().collect(Collectors.toList());
 
 	}
 }
