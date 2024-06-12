@@ -1,10 +1,14 @@
 package C01Basic;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Stack;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class C11QueStackDeque {
@@ -93,22 +97,111 @@ public class C11QueStackDeque {
 	// 	}
 
 		// 프로그래머스) 더 맵게
-		int[] scoville = {1, 2, 3, 9, 10, 12};
-		int K = 7;
-		int answer = 0;
+		// int[] scoville = {1, 2, 3, 9, 10, 12};
+		// int K = 7;
+		// int answer = 0;
+		//
+		// Queue<Integer> pq = new PriorityQueue<>();
+		// for (int i : scoville) {
+		// 	pq.add(i);
+		// }
+		//
+		// while (pq.peek() < K) {
+		// 	if(pq.size() == 1) answer =  -1;
+		// 	int first = pq.poll();
+		// 	int second = pq.poll();
+		//
+		// 	pq.add(first + (second * 2));
+		// 	answer++;
+		// }
 
-		Queue<Integer> pq = new PriorityQueue<>();
-		for (int i : scoville) {
-			pq.add(i);
-		}
+	//	stack
+	// 	Stack<Integer> st1 = new Stack<>();
+	// 	st1.push(10);
+	// 	st1.push(20);
+	// 	st1.push(30);
+	//
+	// 	// pop : 스택에서 요소를 제거 후 해당 요소 반환
+	// 	System.out.println(st1.pop());
+	// 	System.out.println(st1.peek());
+	// 	System.out.println(st1.size());
+	// 	System.out.println(st1.isEmpty());
 
-		while (pq.peek() < K) {
-			if(pq.size() == 1) answer =  -1;
-			int first = pq.poll();
-			int second = pq.poll();
+	//	String객체 5개 정도 Stack 추가 후에 while문을 통해 출력
+	// 	Stack<String> st2 = new Stack<>();
+	// 	st2.push("a");
+	// 	st2.push("b");
+	// 	st2.push("c");
+	// 	st2.push("d");
+	// 	st2.push("e");
+	//
+	// 	while (!st2.isEmpty()) {
+	// 		System.out.println(st2.pop());
+	// 	}
 
-			pq.add(first + (second * 2));
-			answer++;
-		}
+	//	같은 숫자는 싫어
+	// 	int[] arr = {1, 1, 3, 3, 0, 1, 1};
+	// 	Stack<Integer> stack = new Stack<>();
+	//
+	// 	stack.add(arr[0]);
+	// 	for (int i : arr) {
+	// 		if (i != stack.peek()) {
+	// 			stack.add(i);
+	// 		}
+	// 	}
+	// 	int idx = stack.size() - 1;
+	// 	int[] answer = new int[stack.size()];
+	// 	while (!stack.isEmpty()) {
+	// 		answer[idx] = stack.pop();
+	// 		idx--;
+	// 	}
+
+		// List<Integer> myList = new ArrayList<>();
+		// for (int i = 0; i < arr.length; i++) {
+		// 	if (i == 0 || arr[i - 1] != arr[i]) {
+		// 		myList.add(arr[i]);
+		// 	}
+		// }
+		// System.out.println(myList);
+
+	//	올바른 괄호
+	// 	String s = "()()";
+	// 	boolean answer = false;
+	// 	Stack<Character> stack = new Stack<>();
+	// 	for (char c : s.toCharArray()) {
+	// 		if (c == '(') {
+	// 			stack.add(c);
+	// 		} else {
+	// 			if (stack.size() == 0) {
+	// 				answer = false;
+	// 				System.out.println(answer);
+	// 				return;
+	// 			}
+	// 			if (stack.peek() == '(') {
+	// 				stack.pop();
+	// 			}
+	// 		}
+	// 	}
+	// 	if (stack.size() == 0) {
+	// 		answer = true;
+	// 	} else {
+	// 		answer = false;
+	// 	}
+	// 	System.out.println(answer);
+
+
+	//	Deque
+		Deque<Integer> d1 = new ArrayDeque<>();
+		d1.addLast(10);
+		d1.addLast(20);
+		System.out.println(d1);
+		d1.addFirst(30);
+		System.out.println(d1);
+		System.out.println(d1.peekFirst());
+		System.out.println(d1.peekLast());
+
+	//	프로그래머스) 다리를 지나는 트럭
+
+
 	}
 }
