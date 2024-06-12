@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="df0fda98-f4be-4c64-b992-c7054fdfe0ed" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C01Basic/C08List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/C01Basic/C08List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C01Basic/C08List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C01Basic/C08List.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +60,48 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.C08List">
-    <configuration name="C04IfStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C04IfStatements" />
+  <component name="RunManager" selected="애플리케이션.C0202Class">
+    <configuration name="C0201Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0201Method" />
+      <module name="java_grammer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="C02ClassBasic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C0201MethodPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0201MethodPractice" />
+      <module name="java_grammer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="C02ClassBasic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C0202Class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0202Class" />
+      <module name="java_grammer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="C02ClassBasic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C10Set" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C01Basic.C10Set" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
@@ -74,47 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C05LoopStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C05LoopStatements" />
-      <module name="java_grammer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="C01Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C06String" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C06String" />
-      <module name="java_grammer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="C01Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C07Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C07Array" />
-      <module name="java_grammer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="C01Basic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C08List" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C08List" />
+    <configuration name="C11QueStackDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C01Basic.C11QueStackDeque" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.C08List" />
-        <item itemvalue="애플리케이션.C07Array" />
-        <item itemvalue="애플리케이션.C06String" />
-        <item itemvalue="애플리케이션.C05LoopStatements" />
-        <item itemvalue="애플리케이션.C04IfStatements" />
+        <item itemvalue="애플리케이션.C0202Class" />
+        <item itemvalue="애플리케이션.C0201MethodPractice" />
+        <item itemvalue="애플리케이션.C0201Method" />
+        <item itemvalue="애플리케이션.C11QueStackDeque" />
+        <item itemvalue="애플리케이션.C10Set" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +165,9 @@
       <workItem from="1717772172903" duration="664000" />
       <workItem from="1717977792290" duration="26419000" />
       <workItem from="1718018253817" duration="152000" />
-      <workItem from="1718064059689" duration="1090000" />
+      <workItem from="1718064059689" duration="20959000" />
+      <workItem from="1718149783622" duration="1085000" />
+      <workItem from="1718151590069" duration="13546000" />
     </task>
     <servers />
   </component>
