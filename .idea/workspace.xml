@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0fda98-f4be-4c64-b992-c7054fdfe0ed" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/C03Inheritance/C0301Inheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/C03Inheritance/C0302SuperChildClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C01Basic/C08List.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C01Basic/C08List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0201Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0201Method.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0202Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0202Class.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0203Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0203Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculatorInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculatorInstance.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +66,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.C0202Class">
-    <configuration name="C0201Method" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0201Method" />
+  <component name="RunManager" selected="애플리케이션.C0302SuperChildClass">
+    <configuration name="C0206RecursiveBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0206RecursiveBasic" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
@@ -74,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C0201MethodPractice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0201MethodPractice" />
+    <configuration name="C0207RecurCombiPermu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0207RecurCombiPermu" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
@@ -87,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C0202Class" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0202Class" />
+    <configuration name="C0301Inheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C03Inheritance.C0301Inheritance" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C02ClassBasic.*" />
+          <option name="PATTERN" value="C03Inheritance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C10Set" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C10Set" />
+    <configuration name="C0302SuperChildClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C03Inheritance.C0302SuperChildClass" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C01Basic.*" />
+          <option name="PATTERN" value="C03Inheritance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,8 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C11QueStackDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C11QueStackDeque" />
+    <configuration name="C1101StackFunction1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C01Basic.C1101StackFunction1" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
@@ -128,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.C0202Class" />
-        <item itemvalue="애플리케이션.C0201MethodPractice" />
-        <item itemvalue="애플리케이션.C0201Method" />
-        <item itemvalue="애플리케이션.C11QueStackDeque" />
-        <item itemvalue="애플리케이션.C10Set" />
+        <item itemvalue="애플리케이션.C0302SuperChildClass" />
+        <item itemvalue="애플리케이션.C0301Inheritance" />
+        <item itemvalue="애플리케이션.C0207RecurCombiPermu" />
+        <item itemvalue="애플리케이션.C0206RecursiveBasic" />
+        <item itemvalue="애플리케이션.C1101StackFunction1" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +173,11 @@
       <workItem from="1718018253817" duration="152000" />
       <workItem from="1718064059689" duration="20959000" />
       <workItem from="1718149783622" duration="1085000" />
-      <workItem from="1718151590069" duration="13546000" />
+      <workItem from="1718151590069" duration="22691000" />
+      <workItem from="1718200744077" duration="813000" />
+      <workItem from="1718201777319" duration="43000" />
+      <workItem from="1718236934465" duration="22804000" />
+      <workItem from="1718266601876" duration="1400000" />
     </task>
     <servers />
   </component>
