@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0fda98-f4be-4c64-b992-c7054fdfe0ed" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/C03Inheritance/C0301Inheritance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/C03Inheritance/C0302SuperChildClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/C03Inheritance/C0303MethodOverriding.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0201Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0201Method.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0202Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0202Class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0203Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/C0203Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculatorInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_grammer/C02ClassBasic/MyCalculatorInstance.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +60,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.C0302SuperChildClass">
+  <component name="RunManager" selected="애플리케이션.C0303MethodOverriding">
     <configuration name="C0206RecursiveBasic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="C02ClassBasic.C0206RecursiveBasic" />
       <module name="java_grammer" />
@@ -119,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C1101StackFunction1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="C01Basic.C1101StackFunction1" />
+    <configuration name="C0303MethodOverriding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C03Inheritance.C0303MethodOverriding" />
       <module name="java_grammer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="C01Basic.*" />
+          <option name="PATTERN" value="C03Inheritance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.C0303MethodOverriding" />
         <item itemvalue="애플리케이션.C0302SuperChildClass" />
         <item itemvalue="애플리케이션.C0301Inheritance" />
         <item itemvalue="애플리케이션.C0207RecurCombiPermu" />
         <item itemvalue="애플리케이션.C0206RecursiveBasic" />
-        <item itemvalue="애플리케이션.C1101StackFunction1" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +171,7 @@
       <workItem from="1718200744077" duration="813000" />
       <workItem from="1718201777319" duration="43000" />
       <workItem from="1718236934465" duration="22804000" />
-      <workItem from="1718266601876" duration="1400000" />
+      <workItem from="1718266601876" duration="1820000" />
     </task>
     <servers />
   </component>
