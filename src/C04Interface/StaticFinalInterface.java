@@ -19,7 +19,6 @@ class MyImplements implements MyInterface{
 
 	public void methodA(){
 		System.out.println("methodA");
-
 	}
 
 }
