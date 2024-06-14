@@ -19,7 +19,7 @@ public class C0202Class {
 	//
 	// //	B부서의 매출
 	// 	MyCalculator.total = 0;
-	//	클래스메서드 호출방식 : 클래스명. 메서드명();
+	// 	클래스메서드 호출방식 : 클래스명. 메서드명();
 	// 	MyCalculator.sumAcc(10);
 	// 	MyCalculator.sumAcc(20);
 	// 	MyCalculator.sumAcc(30);
@@ -43,17 +43,17 @@ public class C0202Class {
 	// 	System.out.println(m2.total);
 
 		C0203Person person = new C0203Person();
-	//	변수값에 직접 접근하여 값을 할당하는 방식
-	// 	person.name = "홍길동";
-	// 	person.email = "홍길동@naver.com";
-	// 	person.age = 35;
-	// 	person.eating();
-	//
-	// 	System.out.println("이름 : " + person.name);
-	// 	System.out.println("이메일 : " + person.email);
-	// 	System.out.println("나이 : " + person.age);
-	//	일반적인 패턴은 변수값에 직접 접근하지 않는다.
-	//	의도를 명확히 한 메서드를 통해 변수값을 할당하고 가져옴.
+		// 변수값에 직접 접근하여 값을 할당하는 방식
+		// person.name = "홍길동";
+		// person.email = "홍길동@naver.com";
+		// person.age = 35;
+		// person.eating();
+		//
+		// System.out.println("이름 : " + person.name);
+		// System.out.println("이메일 : " + person.email);
+		// System.out.println("나이 : " + person.age);
+		// 일반적인 패턴은 변수값에 직접 접근하지 않는다.
+		// 의도를 명확히 한 메서드를 통해 변수값을 할당하고 가져옴.
 
 		person.eating();
 		person.setName("홍길동");
