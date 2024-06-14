@@ -3,8 +3,8 @@ package C03Inheritance;
 public class C0303MethodOverriding {
 	public static void main(String[] args) {
 		Dog myDog = new Dog();
-		myDog.sound();
-		myDog.sound2();
+		myDog.sound();	// 멍멍
+		myDog.sound2();	// 멍멍멍
 
 	//	상속관계일 때 부모클래스 타입을 자식클래스 객체의 타입으로 지정가능
 	//	Animal클래스에 정의된 메서드만 사용가능하도록 제약 발생

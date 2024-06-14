@@ -7,13 +7,12 @@ public class C0305Others {
 		final int a = 10;
 		// a = 20;
 
-		//추상 클래스와 인터페이스는 구현업싱 객체생성 불가
+		//추상 클래스와 인터페이스는 구현없이 객체생성 불가
 		AbstractDog dog = new AbstractDog();
 	}
 }
 
 //	final을 클래스에 붙임면 상속불가한 클래스 생성
-
 final class FinalParents {
 
 }
@@ -34,7 +33,6 @@ class AbstractAnimal {
 }
 
 class AbstractDog extends AbstractAnimal {
-
 
 	// @Override
 	// void makeSound2() {

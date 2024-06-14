@@ -12,8 +12,5 @@ public class C0304ProtectedTest {
 		System.out.println(pc.st3);
 	//	protected 변수 접근 가능
 		System.out.println(pc.st2);
-
-
-
 	}
 }
