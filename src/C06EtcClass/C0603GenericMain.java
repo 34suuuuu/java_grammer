@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class C0604GenericMain {
+public class C0603GenericMain {
 	public static void main(String[] args) {
 		String[] stArr = {"java", "python", "C"};
 		stChange(stArr, 0, 1);
