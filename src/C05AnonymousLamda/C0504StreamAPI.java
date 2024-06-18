@@ -89,7 +89,7 @@ public class C0504StreamAPI {
 	// 	IntStream newArr6 = Arrays.stream(stArr).mapToInt(a -> a.length()).limit(3);
 	// 	System.out.println(Arrays.toString(newArr6.toArray()));
 
-	//	스트림의 소모 -> sum:합계, recue:누적합계, foreach(출력) e.d
+	//	스트림의 소모 -> sum:합계, reduce:누적합계, foreach(출력) e.d
 	// 	int[] intArr = {10, 20, 30, 40};
 	// 	Arrays.stream(intArr).forEach(a -> System.out.println(a));
 	// 	Arrays.stream(intArr).forEach(System.out::println);
@@ -100,11 +100,11 @@ public class C0504StreamAPI {
 	// 	int intArrCount= (int)Arrays.stream(intArr).count();
 	// 	int allMultiply = Arrays.stream(intArr).reduce(1, (a, b) -> a * b);
 	// 	int allAdd = Arrays.stream(intArr).reduce(0, (a, b) -> a + b);
-	// 	System.out.println(allMultiply);
-	// 	System.out.println(allAdd);
+	// 	System.out.println(allMultiply);	// 240000
+	// 	System.out.println(allAdd);	// 100
 	// 	String[] stArr = {"hello", "java", "world"};
 	// 	String stAllAdd = Arrays.stream(stArr).reduce("", (a, b) -> a + b);
-	// 	System.out.println(stAllAdd);
+	// 	System.out.println(stAllAdd);	//hellojavaworld
 
 	//	findFirst : 첫번쨰 요소 반환
 	// 	List<Student> students = new ArrayList<>();
@@ -136,42 +136,42 @@ public class C0504StreamAPI {
 	// 	}
 
 	//	Optional객체 생성 3가지 방법
-		Optional<String> opt1 = Optional.empty();
-		Optional<String> opt2 = Optional.of("hello");	// null이 못들어감
-		Optional<String> opt3 = Optional.ofNullable("");	//값이 있어도 되고 없어도됨
-
-	//	Optional객체 처리 방법 4가지
-	//	방법1. isPresent() 확인 후 get()
-		if (opt3.isPresent()) {
-			System.out.println(opt3.get().length());
-		}
-	//	방법2. orElse() : 값이 있으면 있는 값 return, 없으면 지정 값 return
-		System.out.println(opt3.orElse("").length());
-	//	방법3. orElseGet() : 값이 있으면 있는 값 return, 없으면 람다함수 실행
-		System.out.println(opt3.orElseGet(() -> new String("")).length());
-	//	방법4. orElseThrow() : 가장 중요, 값이 있으면 있는 값 return, 없으면 지정된 예외 강제 발생
-	//	개발에서 예외를 사용자에게 적절한 메시지 전달 목적으로 강제 발생시키는 경우도 존재.
-		System.out.println(opt3.orElseThrow(() -> new NoSuchElementException("값이 없습니다")).length());
-
-		List<Student> students = new ArrayList<>();
-		students.add(new Student("kim", 30));
-		students.add(new Student("kim1", 21));
-		students.add(new Student("kim2", 23));
-		students.add(new Student("kim3", 25));
-
-	//	방법1.
-		OptionalDouble answer = students.stream().filter(a -> a.getAge() >= 29).mapToInt(a -> a.getAge()).average();
-		if (answer.isPresent()) {
-			System.out.println(answer.getAsDouble());
-		} else {
-			System.out.println("값이 없습니다.");
-		}
-		System.out.println(answer);
-	//	 방법2
-		double answer2 = students.stream()
-			.filter(a -> a.getAge() >= 29)
-			.mapToInt(a -> a.getAge())
-			.average()
-			.orElseThrow(() -> new NoSuchElementException("값이 없습니다."));
+	// 	Optional<String> opt1 = Optional.empty();
+	// 	Optional<String> opt2 = Optional.of("hello");	// null이 못들어감
+	// 	Optional<String> opt3 = Optional.ofNullable("");	//값이 있어도 되고 없어도됨
+	//
+	// //	Optional객체 처리 방법 4가지
+	// //	방법1. isPresent() 확인 후 get()
+	// 	if (opt3.isPresent()) {
+	// 		System.out.println(opt3.get().length());
+	// 	}
+	// //	방법2. orElse() : 값이 있으면 있는 값 return, 없으면 지정 값 return
+	// 	System.out.println(opt3.orElse("").length());
+	// //	방법3. orElseGet() : 값이 있으면 있는 값 return, 없으면 람다함수 실행
+	// 	System.out.println(opt3.orElseGet(() -> new String("")).length());
+	// //	방법4. orElseThrow() : 가장 중요, 값이 있으면 있는 값 return, 없으면 지정된 예외 강제 발생
+	// //	개발에서 예외를 사용자에게 적절한 메시지 전달 목적으로 강제 발생시키는 경우도 존재.
+	// 	System.out.println(opt3.orElseThrow(() -> new NoSuchElementException("값이 없습니다")).length());
+	//
+	// 	List<Student> students = new ArrayList<>();
+	// 	students.add(new Student("kim", 30));
+	// 	students.add(new Student("kim1", 21));
+	// 	students.add(new Student("kim2", 23));
+	// 	students.add(new Student("kim3", 25));
+	//
+	// //	방법1.
+	// 	OptionalDouble answer = students.stream().filter(a -> a.getAge() >= 29).mapToInt(a -> a.getAge()).average();
+	// 	if (answer.isPresent()) {
+	// 		System.out.println(answer.getAsDouble());
+	// 	} else {
+	// 		System.out.println("값이 없습니다.");
+	// 	}
+	// 	System.out.println(answer);
+	// //	 방법2
+	// 	double answer2 = students.stream()
+	// 		.filter(a -> a.getAge() >= 29)
+	// 		.mapToInt(a -> a.getAge())
+	// 		.average()
+	// 		.orElseThrow(() -> new NoSuchElementException("값이 없습니다."));
 	}
 }
