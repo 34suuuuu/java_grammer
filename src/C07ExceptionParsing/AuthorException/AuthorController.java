@@ -35,7 +35,7 @@ public class AuthorController {
 
 				try {
 					authorService.login(email, password);
-				} catch (IllegalArgumentException e) {
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			} else {
@@ -43,5 +43,4 @@ public class AuthorController {
 			}
 		}
 	}
-
 }

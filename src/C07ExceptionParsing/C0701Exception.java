@@ -5,35 +5,35 @@ import java.util.Scanner;
 
 public class C0701Exception {
 	public static void main(String[] args){
-	// 	System.out.println("나눗셈 프로그램입니다.");
-	// 	Scanner sc = new Scanner(System.in);
-	//
-	// //	예외가 발생할 것으로 예상되는 코드에 try로 감싸고
-	// //	예외가 발생했을 때 대응하는 코드를 catch로 작성한다.
-	// 	try {
-	// 		System.out.println("분자 입력");
-	// 		int head = Integer.parseInt(sc.nextLine());
-	// 		System.out.println("분모 입력");
-	// 		int tail = Integer.parseInt(sc.nextLine());
-	// 		int result = head / tail;
-	// 		System.out.println("나눈 결과값은 " + result);
-	//
-	// 	//	예외는 catch 구문 순차적으로 검사
-	// 	} catch (ArithmeticException e) {
-	// 		System.out.println("0으로 나누시면 안됩니다.");
-	// 		// 예외가 발생된 내역을 로그를 남기기 위함
-	// 		e.printStackTrace();
-	// 	} catch (NumberFormatException e) {
-	// 		System.out.println("숫자에 맞는 값은 입력해주세요");
-	// 		e.printStackTrace();
-	// 		//	Exception은 모든 예외의 조상 클래스
-	// 	} catch (Exception e) {
-	// 		System.out.println("예외가 발생했습니다.");
-	// 		e.printStackTrace();
-	// 	}finally {
-	// 		System.out.println("무조건 실행되는 구문입니다.");
-	// 	}
-	// 	System.out.println("감사합니다");
+		System.out.println("나눗셈 프로그램입니다.");
+		Scanner sc = new Scanner(System.in);
+
+	//	예외가 발생할 것으로 예상되는 코드에 try로 감싸고
+	//	예외가 발생했을 때 대응하는 코드를 catch로 작성한다.
+		try {
+			System.out.println("분자 입력");
+			int head = Integer.parseInt(sc.nextLine());
+			System.out.println("분모 입력");
+			int tail = Integer.parseInt(sc.nextLine());
+			int result = head / tail;
+			System.out.println("나눈 결과값은 " + result);
+
+		//	예외는 catch 구문 순차적으로 검사
+		} catch (ArithmeticException e) {
+			System.out.println("0으로 나누시면 안됩니다.");
+			// 예외가 발생된 내역을 로그를 남기기 위함
+			e.printStackTrace();
+		} catch (NumberFormatException e) {
+			System.out.println("숫자에 맞는 값은 입력해주세요");
+			e.printStackTrace();
+			//	Exception은 모든 예외의 조상 클래스
+		} catch (Exception e) {
+			System.out.println("예외가 발생했습니다.");
+			e.printStackTrace();
+		}finally {
+			System.out.println("무조건 실행되는 구문입니다.");
+		}
+		System.out.println("감사합니다");
 
 	//	throws : 예외처리 위임을 명시
 		login("1234");
