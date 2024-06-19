@@ -9,37 +9,37 @@ import java.util.Date;
 
 public class C0602Calendar {
 	public static void main(String[] args) {
-	//	java.util 패키지의 Calendar 클래스
-	// 	Calendar calendar1 = Calendar.getInstance();
-	// 	System.out.println(calendar1.getTime());
-	//
-	// 	System.out.println(calendar1.get(Calendar.YEAR));
-	// 	System.out.println(calendar1.get(Calendar.MONTH) + 1);
-	// 	System.out.println(calendar1.get(Calendar.DAY_OF_MONTH));
-	// 	System.out.println(calendar1.get(Calendar.DAY_OF_WEEK));
-	// 	System.out.println(calendar1.get(Calendar.HOUR_OF_DAY));
-	// 	System.out.println(calendar1.get(Calendar.MINUTE));
-	// 	System.out.println(calendar1.get(Calendar.SECOND));
+		// java.util 패키지의 Calendar 클래스
+		// Calendar calendar1 = Calendar.getInstance();
+		// System.out.println(calendar1.getTime());
+		//
+		// System.out.println(calendar1.get(Calendar.YEAR));
+		// System.out.println(calendar1.get(Calendar.MONTH) + 1);
+		// System.out.println(calendar1.get(Calendar.DAY_OF_MONTH));
+		// System.out.println(calendar1.get(Calendar.DAY_OF_WEEK));
+		// System.out.println(calendar1.get(Calendar.HOUR_OF_DAY));
+		// System.out.println(calendar1.get(Calendar.MINUTE));
+		// System.out.println(calendar1.get(Calendar.SECOND));
 
-	//	java.time 패키지 : Local~ 클래스
-	//	날짜(Local)-date타입, 시간(LocalTime), 날짜와시간(LocalDateTIme)-datetime타입
-	// 	LocalDate presentDate = LocalDate.now();
-	// 	System.out.println(presentDate);
-	// 	System.out.println(presentDate.getYear());
-	// 	System.out.println(presentDate.getMonth());
-	// 	System.out.println(presentDate.getDayOfMonth());
-	// 	System.out.println(presentDate.getDayOfWeek());
-	//
-	// 	LocalTime presentTime = LocalTime.now();
-	// 	System.out.println(presentTime);
-	// 	System.out.println(presentTime.getHour());
-	// 	System.out.println(presentTime.getMinute());
-	// 	System.out.println(presentTime.getSecond());
-	//
-	// 	LocalDateTime presentDateTime = LocalDateTime.now();
-	// 	System.out.println(presentDateTime);
-	// 	System.out.println(presentDateTime.getYear());
-	// 	System.out.println(presentDateTime.getHour());
+		// java.time 패키지 : Local~ 클래스
+		// 날짜(Local)-date타입, 시간(LocalTime), 날짜와시간(LocalDateTIme)-datetime타입
+		// LocalDate presentDate = LocalDate.now();
+		// System.out.println(presentDate);
+		// System.out.println(presentDate.getYear());
+		// System.out.println(presentDate.getMonth());
+		// System.out.println(presentDate.getDayOfMonth());
+		// System.out.println(presentDate.getDayOfWeek());
+		//
+		// LocalTime presentTime = LocalTime.now();
+		// System.out.println(presentTime);
+		// System.out.println(presentTime.getHour());
+		// System.out.println(presentTime.getMinute());
+		// System.out.println(presentTime.getSecond());
+		//
+		// LocalDateTime presentDateTime = LocalDateTime.now();
+		// System.out.println(presentDateTime);
+		// System.out.println(presentDateTime.getYear());
+		// System.out.println(presentDateTime.getHour());
 
 	//	임의로 특정시간을 만들어 내고 싶을 때, of메서드 사용
 		LocalDate birthDay = LocalDate.of(2000, 11, 20);
