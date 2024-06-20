@@ -1,7 +1,5 @@
 package C08Thread;
 
-import java.util.TreeSet;
-
 public class MainClass {
 	public static void main(String[] args) throws InterruptedException {
 		// //	스레드 생성 방법 2가지 : 1. 스레드 상속방식
