@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.Buffer;
 import java.nio.charset.StandardCharsets;
 
 public class C0902Webserver2 {
@@ -23,7 +22,21 @@ public class C0902Webserver2 {
 				sb.append(line + "\n");
 			}
 			String requestString = sb.toString();
-			System.out.println(requestString);
+			String firstLine = requestString.split("\n")[0];
+			String infos = firstLine.split(" ")[1];
+			String id = "";
+			if (infos.contains("?")) {
+				String st1 = infos.split("\\?")[1];
+				String[] stArr = st1.split("&");
+				for (String s : stArr) {
+					String[] keyValue = s.split("=");
+					if (keyValue[0].equals("id")) {
+						id = keyValue[1];
+					}
+				}
+			}
+			System.out.println("id : " + id);
+			// System.out.println(infos);
 			String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + "hello world";
 			// UTF-8문자열 return
 			socket.getOutputStream().write(httpResponse.getBytes(StandardCharsets.UTF_8));
